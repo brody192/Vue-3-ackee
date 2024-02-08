@@ -12,6 +12,7 @@
     "node": "18"
   },
   "dependencies": {
+    "swetrix": "^3.0.3",
     "vue": "^3.3.7"
   },
   "devDependencies": {

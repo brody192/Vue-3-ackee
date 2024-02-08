@@ -1,5 +1,15 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+
+import * as Swetrix from 'swetrix'
+
+Swetrix.init(import.meta.env.VITE_SWETRIX_PROJECT_ID, {
+  devMode: false,
+  disabled: false,
+  respectDNT: false,
+  apiURL: import.meta.env.VITE_SWETRIX_API_URL,
+});
+Swetrix.trackViews()
 </script>
 
 <template>
@@ -21,9 +31,11 @@ import HelloWorld from './components/HelloWorld.vue'
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
