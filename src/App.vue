@@ -1,14 +1,6 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
-import * as Swetrix from 'swetrix'
 
-Swetrix.init(import.meta.env.VITE_SWETRIX_PROJECT_ID, {
-  devMode: false,
-  disabled: false,
-  respectDNT: false,
-  apiURL: import.meta.env.VITE_SWETRIX_API_URL,
-})
-Swetrix.trackViews()
 </script>
 
 <template>
